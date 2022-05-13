@@ -66,6 +66,9 @@ textarea{
 
 /*styling for the save buttons*/
 .saveBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   width: 100%;
   border-left: 1px solid black;
@@ -78,10 +81,14 @@ textarea{
   color: white;
 }
 
-.saveBtn i:hover {
-  font-size: 20px;
+.save-btn-icon:hover {
+  color: black;
   transition: all .3s ease-in-out;
 }
+
+/* .save-btn-icon {
+
+} */
 
 .disk{
   text-align: center;
