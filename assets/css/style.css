@@ -5,6 +5,11 @@ body {
 }
 
 textarea{
+  width: 100%;
+  height: 95%;
+  align-self: flex-start;
+  margin-left: 0;
+  margin-bottom: 10px;
   background: transparent;
   border: none;
   resize: none;
@@ -15,12 +20,11 @@ textarea{
 
 .jumbotron {
   text-align: center;
-  /* background-color: transparent;
-  color: black; */
   color: black;
   border-radius: 0;
-  /* This one isn't working and I want thicker than border-5 */
   border-bottom: solid black 10px;
+  padding-top: 40px;
+  padding-bottom: 20px;
 }
 
 /* This one I'm not so sure about? Will have to try it and see what it looks like, but thinking its for the description at the top of the page */
@@ -28,24 +32,28 @@ textarea{
   white-space: pre-wrap;
 }
 
-/* This is the container to save! */
+/*time display column */
 .time-block{
   text-align: center;
   border-radius: 15px;
 }
 
-/* each row for each time */
+/* row styling */
 .row-style {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;
 }
 
-/* The hour block */
+/* hour div */
 .hour {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
+  height: 80px;
+}
+
+.hourfive{
+  border-bottom: 1px dashed #000000;
 }
 
 /* These colors show the state of the event based on the designated time */
@@ -67,9 +75,10 @@ textarea{
 /*styling for the save buttons*/
 .saveBtn {
   display: flex;
+  align-self: center;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 78px;
   width: 100%;
   border-left: 1px solid black;
   border-top: none;
@@ -86,12 +95,15 @@ textarea{
   transition: all .3s ease-in-out;
 }
 
-/* .save-btn-icon {
-
-} */
-
+/*icon styling*/
 .disk{
   text-align: center;
   height: 20px;
   color: white;
+}
+
+/*styling for moment current date display*/
+#currentDay {
+  height: 30px;
+  font-size: 15px;
 }

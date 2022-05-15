@@ -1,22 +1,15 @@
 ## Work-Day-Scheduler
 
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
+## Description
 
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with time blocks for standard business hours
-WHEN I view the time blocks for that day
-THEN each time block is color-coded to indicate whether it is in the past, present, or future
-WHEN I click into a time block
-THEN I can enter an event
-WHEN I click the save button for that time block
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
+This project was created to allow an employee with a busy schedule to manage their time effectively by adding events to a dynamic daily planner. The requirements for this project were as follows:
+* When the planner site is visited, the current day is displayed at the top of the page.
+* When the user scrolls down, the time blocks are shown from 9AM to 5PM (the standard business hours).
+* When the user views the time blocks, they are color coded to show that the time is past, present, or future.
+* When the user clicks in each time block, they can enter an event via text.
+* When the user clicks the save button for that time block, the text is saved in local storage.
+* When the user refreshes the page, the events remain/are loaded from local storage.
+
 
 1. Checked out the HTML, there's a space for the time blocks, but it is empty
 a. Thinking should create rows () with columns that have two columns, one that is 1, a 6, and a 1? The 1 will have the time and the 6 will have the input space, textarea, the last 1 the save button. 

@@ -15,16 +15,19 @@
 <body>
   <header class="jumbotron d-flex flex-column align-items-center justify-content-center bg-white">
     <h1 class="display-3">Work Day Scheduler</h1>
-    <p class="lead">A simple calendar app for scheduling your work day</p>
-    <!-- The current date goes here using moment or JS? -->
+    <p class="lead description">A simple calendar app for scheduling your work day</p>
     <p id="currentDay" class="lead"></p>
   </header>
   <div class="container">
     <div class="row row-style time-block">
-      <div id="NineAM" class="col-1 hour"></div>
-      <div class="col-10 past border-top border-white border-1"></div>
-      <div class="col-1 p-0 border-top border-white border-1 d-flex justify-content-center align-items-center">
-        <button class="saveBtn">
+      <div class="col-1 hour">
+        <p>9AM</p>
+      </div>
+      <div id="9AM" class="textcol col-10 past border-top border-white border-1 d-flex justify-content-start align-items-center p-0">
+        <textarea id="text9AM"></textarea>
+      </div>
+      <div class="col-1 p-0 border-top border-white border-1 d-flex justify-content-center align-items-start">
+        <button id= "btn9AM" class="saveBtn">
           <i class="fa-solid fa-floppy-disk fa-lg save-btn-icon"></i>
         </button>
       </div>
@@ -33,10 +36,14 @@
 
   <div class="container">
     <div class="row row-style time-block">
-      <div id="TenAM" class="col-1 hour"></div>
-      <div class="col-10 past border-top border-white border-1"></div>
-      <div class="col-1 p-0 border-top border-white border-1 d-flex justify-content-center align-items-center">
-        <button class="saveBtn">
+      <div class="col-1 hour">
+        <p>10AM</p>
+      </div>
+      <div id="10AM" class="textcol col-10 past border-top border-white border-1 d-flex justify-content-start align-items-center p-0">
+        <textarea id= "text10AM"></textarea>
+      </div>
+      <div class="col-1 p-0 border-top border-white border-1 d-flex justify-content-center align-items-start">
+        <button id= "btn10AM" class="saveBtn">
           <i class="fa-solid fa-floppy-disk fa-lg save-btn-icon"></i>
         </button>
       </div>
@@ -45,10 +52,14 @@
 
   <div class="container">
     <div class="row row-style time-block">
-      <div id="ElevenAM" class="col-1 hour"></div>
-      <div class="col-10 past border-top border-white border-1"></div>
-      <div class="col-1 p-0 border-top border-white border-1 d-flex justify-content-center align-items-center">
-        <button class="saveBtn">
+      <div class="col-1 hour">
+        <p>11AM</p>
+      </div>
+      <div id="11AM" class="textcol col-10 past border-top border-white border-1 d-flex justify-content-start align-items-center p-0">
+        <textarea id= "text11AM"></textarea>
+      </div>
+      <div class="col-1 p-0 border-top border-white border-1 d-flex justify-content-center align-items-start">
+        <button id= "btn11AM" class="saveBtn">
           <i class="fa-solid fa-floppy-disk fa-lg save-btn-icon"></i>
         </button>
       </div>
@@ -57,10 +68,14 @@
 
   <div class="container">
     <div class="row row-style time-block">
-      <div id="TwelveAM" class="col-1 hour"></div>
-      <div class="col-10 past border-top border-white border-1"></div>
-      <div class="col-1 p-0 border-top border-white border-1 d-flex justify-content-center align-items-center">
-        <button class="saveBtn">
+      <div class="col-1 hour">
+        <p>12PM</p>
+      </div>
+      <div id="12PM" class="textcol col-10 past border-top border-white border-1 d-flex justify-content-start align-items-center p-0">
+        <textarea id= "text12PM"></textarea>
+      </div>
+      <div class="col-1 p-0 border-top border-white border-1 d-flex justify-content-center align-items-start">
+        <button id= "btn12PM" class="saveBtn">
           <i class="fa-solid fa-floppy-disk fa-lg save-btn-icon"></i>
         </button>
       </div>
@@ -69,10 +84,14 @@
 
   <div class="container">
     <div class="row row-style time-block">
-      <div id="OnePM" class="col-1 hour"></div>
-      <div class="col-10 past border-top border-white border-1"></div>
-      <div class="col-1 p-0 border-top border-white border-1 d-flex justify-content-center align-items-center">
-        <button class="saveBtn">
+      <div class="col-1 hour">
+        <p>1PM</p>
+      </div>
+      <div id="1PM" class="textcol col-10 past border-top border-white border-1 d-flex justify-content-start align-items-center p-0">
+        <textarea id= "text1PM"></textarea>
+      </div>
+      <div class="col-1 p-0 border-top border-white border-1 d-flex justify-content-center align-items-start">
+        <button id= "btn1PM" class="saveBtn">
           <i class="fa-solid fa-floppy-disk fa-lg save-btn-icon"></i>
         </button>
       </div>
@@ -81,10 +100,14 @@
 
   <div class="container">
     <div class="row row-style time-block ">
-      <div id="TwoPM" class="col-1 hour"></div>
-      <div class="col-10 past border-top border-white border-1"></div>
-      <div class="col-1 p-0 border-top border-white border-1 d-flex justify-content-center align-items-center">
-        <button class="saveBtn">
+      <div class="col-1 hour">
+        <p>2PM</p>
+      </div>
+      <div id="2PM" class="textcol col-10 past border-top border-white border-1 d-flex justify-content-start align-items-center p-0">
+        <textarea id= "text2PM"></textarea>
+      </div>
+      <div class="col-1 p-0 border-top border-white border-1 d-flex justify-content-center align-items-start">
+        <button id= "btn2PM" class="saveBtn">
           <i class="fa-solid fa-floppy-disk fa-lg save-btn-icon"></i>
         </button>
       </div>
@@ -93,10 +116,14 @@
 
   <div class="container">
     <div class="row row-style time-block ">
-      <div id="ThreePM" class="col-1 hour"></div>
-      <div class="col-10 past border-top border-white border-1"></div>
-      <div class="col-1 p-0 border-top border-white border-1 d-flex justify-content-center align-items-center">
-        <button class="saveBtn">
+      <div class="col-1 hour">
+        <p>3PM</p>
+      </div>
+      <div id="3PM" class="textcol col-10 past border-top border-white border-1 d-flex justify-content-start align-items-center p-0">
+        <textarea id= "text3PM"></textarea>
+      </div>
+      <div class="col-1 p-0 border-top border-white border-1 d-flex justify-content-center align-items-start">
+        <button id= "btn3PM" class="saveBtn">
           <i class="fa-solid fa-floppy-disk fa-lg save-btn-icon"></i>
         </button>
       </div>
@@ -105,10 +132,14 @@
 
   <div class="container">
     <div class="row row-style time-block ">
-      <div id="FourPM" class="col-1 hour"></div>
-      <div class="col-10 past border-top border-white border-1"></div>
-      <div class="col-1 p-0 border-top border-white border-1 d-flex justify-content-center align-items-center">
-        <button class="saveBtn">
+      <div class="col-1 hour">
+        <p>4PM</p>
+      </div>
+      <div id="4PM" class="textcol col-10 past border-top border-white border-1 d-flex justify-content-start align-items-center p-0">
+        <textarea id= "text4PM"></textarea>
+      </div>
+      <div class="col-1 p-0 border-top border-white border-1 d-flex justify-content-center align-items-start">
+        <button id= "btn4PM" class="saveBtn">
           <i class="fa-solid fa-floppy-disk fa-lg save-btn-icon"></i>
         </button>
       </div>
@@ -117,10 +148,14 @@
 
   <div class="container">
     <div class="row row-style time-block ">
-      <div id="FivePM" class="col-1 hour"></div>
-      <div class="col-10 past border-top border-white border-1"></div>
-      <div class="col-1 p-0 border-top border-white border-1 d-flex justify-content-center align-items-center">
-        <button class="saveBtn">
+      <div class="col-1 hour hourfive">
+        <p>5PM</p>
+      </div>
+      <div id="5PM" class="textcol col-10 past border-top border-bottom border-white border-1 d-flex justify-content-start align-items-center p-0">
+        <textarea id= "text5PM"></textarea>
+      </div>
+      <div class="col-1 p-0 border-top border-white border-1 d-flex justify-content-center align-items-start">
+        <button id= "btn5PM" class="saveBtn">
           <i class="fa-solid fa-floppy-disk fa-lg save-btn-icon"></i>
         </button>
       </div>
@@ -128,7 +163,8 @@
   </div>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment.min.js"></script>
+  <script src = "./assets/js/script.js"></script>
 </body>
 
 </html>
