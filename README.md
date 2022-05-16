@@ -10,6 +10,16 @@ This project was created to allow an employee with a busy schedule to manage the
 * When the user clicks the save button for that time block, the text is saved in local storage.
 * When the user refreshes the page, the events remain/are loaded from local storage.
 
+## Table of Contents (Optional)
+- [Installation](#installation)
+- [Links](#links)
+- [Usage](#usage)
+- [Creation](#creation)
+- [Credits](#credits)
+- [License](#license)
+
+## Installation
+The repository, Code-Quiz, was created and cloned from GitHub. An index.html file and highscores.html file were created and were coded to contain the site content for the index and highscore pages, respectively. A folder, assets, was created to house two folders, css and js.  The css folder contains the style sheet for the index page, style.css, and the style sheet for the highscore page, hsstyle.css, which were created and coded to contain the site formatting and design for the index and highscore pages, respectively. The js folder contains the script sheet, script.js and highscores.js, which were created and coded to allow the site to be dynamic.
 
 1. Checked out the HTML, there's a space for the time blocks, but it is empty
 a. Thinking should create rows () with columns that have two columns, one that is 1, a 6, and a 1? The 1 will have the time and the 6 will have the input space, textarea, the last 1 the save button. 
