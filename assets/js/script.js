@@ -1,15 +1,10 @@
-//variables
+//global variable
 var currentDateEl = $("#currentDay");
 
 //set current date
 function setDate() {
     var m = moment().format("dddd, MMMM Do");
     currentDateEl.text(m);
-};
-
-var currentTime = moment().format("H");
-if (currentTime == "16") {
-    console.log("It's 4 0'clock!");
 };
 
 //function that sets the color by time
@@ -155,13 +150,12 @@ function setRowColor() {
 //interval to update row colors
 setInterval(setRowColor(), 3600000);
 
-//function that saves the time with its text area to local storage
+//function that saves the text area value for each row to local storage
 $(".saveBtn").on("click", function(){
     var activity = $(this).parent().siblings(".textcol").children().val().trim();
     var hourKey = $(this).attr("id").split("-")[1];
     localStorage.setItem(hourKey, activity);
 });
-
 
 // function that retrieves the text from local storage for each row
 function loadText() {
@@ -173,7 +167,7 @@ $(".time-block").each(function(){
     var loadText = localStorage.getItem(hour);
     $(textEl).val(loadText);
 })
-}
+};
 
 //calling functions
 setDate();
